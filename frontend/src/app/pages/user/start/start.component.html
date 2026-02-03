@@ -1,0 +1,132 @@
+<!-- =======================
+     EXAM PAGE (Before Submit)
+=========================== -->
+<div class="exam-wrapper" *ngIf="!isSubmit">
+
+  <!-- FIXED TIMER -->
+  <div class="timer-box">
+    <div class="timer-circle" [ngClass]="{ 'warning': timer < 60, 'danger': timer < 20 }">
+      <svg>
+        <circle cx="60" cy="60" r="54"></circle>
+      </svg>
+      <div class="time-text">{{ getFormattedTimer() }}</div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="exam-content">
+    <h2 class="quiz-title">{{ questions[0]?.quiz?.title }}</h2>
+
+    <mat-card *ngFor="let q of questions; let i = index" class="question-card">
+
+      <div class="question-text">
+        <span class="q-number">Q{{ i + 1 }}.</span>
+        <span [innerHTML]="q.content"></span>
+      </div>
+
+      <!-- Options -->
+      <div class="options-grid">
+        <label class="option">
+          <input type="radio" [value]="q.option1" [(ngModel)]="q.givenAnswer" [name]="i" />
+          {{ q.option1 }}
+        </label>
+
+        <label class="option">
+          <input type="radio" [value]="q.option2" [(ngModel)]="q.givenAnswer" [name]="i" />
+          {{ q.option2 }}
+        </label>
+
+        <label class="option">
+          <input type="radio" [value]="q.option3" [(ngModel)]="q.givenAnswer" [name]="i" />
+          {{ q.option3 }}
+        </label>
+
+        <label class="option">
+          <input type="radio" [value]="q.option4" [(ngModel)]="q.givenAnswer" [name]="i" />
+          {{ q.option4 }}
+        </label>
+      </div>
+
+    </mat-card>
+
+    <!-- Submit -->
+    <div class="submit-wrapper">
+      <button mat-raised-button color="primary" (click)="submitQuiz()">
+        Submit Quiz
+      </button>
+    </div>
+
+  </div>
+
+  <!-- RIGHT INSTRUCTIONS -->
+  <!-- <div class="instructions-panel">
+    <mat-card>
+      <h3>Instructions</h3>
+      <ul>
+        <li>Do not switch tabs.</li>
+        <li>Do not refresh the page.</li>
+        <li>Do not minimize the window.</li>
+      </ul>
+    </mat-card>
+  </div> -->
+
+</div>
+
+
+
+<!-- =======================
+     MODERN RESULT PAGE
+=========================== -->
+<div class="result-screen" *ngIf="isSubmit">
+
+  <div class="result-card-pro">
+
+    <!-- Animated Score Circle -->
+    <div class="score-circle">
+      <svg>
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle
+          cx="70"
+          cy="70"
+          r="70"
+          [attr.stroke-dashoffset]="440 - (440 * marksGot) / (questions?.length * 2)"
+        ></circle>
+      </svg>
+
+      <div class="score-value">
+        {{ marksGot }}
+        <span class="small">Marks</span>
+      </div>
+    </div>
+
+    <!-- Result Title -->
+    <h2 class="result-title">Your Quiz Summary</h2>
+
+    <!-- Stats Section -->
+    <div class="result-stats-pro">
+      <div class="stat-box">
+        <h3>{{ correctAnswer }}</h3>
+        <p>Correct Answers</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>{{ attempted }}</h3>
+        <p>Questions Attempted</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>{{ questions?.length }}</h3>
+        <p>Total Questions</p>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="result-actions-pro">
+      <button mat-raised-button color="accent" (click)="printPage()">Print</button>
+      <button mat-raised-button color="primary" routerLink="/user-dashboard/0">
+        Back to Home
+      </button>
+    </div>
+
+  </div>
+</div>

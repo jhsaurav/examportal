@@ -1,0 +1,60 @@
+<div class="quiz-list-page">
+
+  <!-- Header -->
+  <div class="page-header">
+    <h2>All Quizzes</h2>
+    <button mat-raised-button color="primary" routerLink="/admin/add-quiz">
+      + Add Quiz
+    </button>
+  </div>
+
+  <!-- Quiz Grid -->
+  <div class="quiz-grid">
+
+    <mat-card class="quiz-card" *ngFor="let q of quizzes">
+
+      <!-- Card Header -->
+      <div class="quiz-card-header">
+        <div class="quiz-icon">
+          <!-- <mat-icon>quiz</mat-icon> -->
+           <img  width="50px" height="50px" src="assets\b.jpg" alt="">
+        </div>
+
+        <div class="quiz-title-block">
+          <h3>{{ q.title }}</h3>
+          <span class="category-chip">{{ q.category.title }}</span>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <p class="description">{{ q.description }}</p>
+
+      <!-- Stats -->
+      <div class="quiz-stats">
+        <span class="stat-chip">Marks: {{ q.maxmarks }}</span>
+        <span class="stat-chip">Questions: {{ q.numberOfQuestions }}</span>
+      </div>
+
+      <!-- Actions -->
+      <div class="quiz-actions">
+
+        <button mat-stroked-button color="primary" [routerLink]="['/admin/view-questions', q.id, q.title]">
+          Questions
+        </button>
+
+        <button mat-stroked-button color="accent" [routerLink]="['/admin/quiz', q.id]">
+          Edit
+        </button>
+
+
+        <button mat-stroked-button color="warn" (click)="deleteQuiz(q.id)">
+          Delete
+        </button>
+
+      </div>
+
+    </mat-card>
+
+  </div>
+
+</div>

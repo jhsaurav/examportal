@@ -1,0 +1,75 @@
+<div class="auth-wrapper">
+
+  <mat-card class="auth-card">
+
+    <!-- Logo / Header -->
+    <div class="logo-box">
+      <img src="../../../assets/logo.png" alt="ExamPortal Logo" />
+      <h2>Create Account</h2>
+      <p>Register to start your exams</p>
+    </div>
+
+    <!-- Registration Form -->
+    <form (ngSubmit)="formSubmit()" class="auth-form">
+
+      <!-- Username -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Username</mat-label>
+        <input matInput required [(ngModel)]="user.username" name="username" placeholder="Choose a unique username" />
+        <mat-icon matPrefix>person</mat-icon>
+        <mat-hint>Username must be unique</mat-hint>
+      </mat-form-field>
+
+      <!-- Password -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput [(ngModel)]="user.password" name="password" required [type]="hide ? 'password' : 'text'"
+          placeholder="Create a strong password" />
+
+        <button mat-icon-button matSuffix type="button" (click)="hide = !hide">
+          <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+        <mat-icon matPrefix>lock</mat-icon>
+      </mat-form-field>
+
+      <!-- First Name -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>First Name</mat-label>
+        <input matInput required [(ngModel)]="user.firstName" name="firstName" placeholder="First name" />
+        <mat-icon matPrefix>badge</mat-icon>
+      </mat-form-field>
+
+      <!-- Last Name -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput required [(ngModel)]="user.lastName" name="lastName" placeholder="Last name" />
+        <mat-icon matPrefix>badge</mat-icon>
+      </mat-form-field>
+
+      <!-- Phone -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Phone</mat-label>
+        <input matInput required [(ngModel)]="user.phone" name="phone" placeholder="Phone number" />
+        <mat-icon matPrefix>call</mat-icon>
+      </mat-form-field>
+
+      <!-- Actions -->
+      <div class="action-row">
+        <button mat-flat-button color="primary" type="submit" class="submit-btn">
+          Register
+        </button>
+
+        <button mat-stroked-button color="primary" type="reset">
+          Reset
+        </button>
+      </div>
+
+    </form>
+    <div class="text-center mt15 auth-footer">
+      Already have an account?
+      <a routerLink="/login">Login</a>
+    </div>
+
+  </mat-card>
+
+</div>

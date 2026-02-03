@@ -1,0 +1,51 @@
+<div class="category-page">
+
+  <!-- Header -->
+  <div class="page-header">
+    <h1>All Categories</h1>
+    <button
+      mat-flat-button
+      color="primary"
+      routerLink="/admin/add-category">
+      + Add Category
+    </button>
+  </div>
+
+  <!-- Categories Grid -->
+  <div class="category-grid">
+
+    <mat-card class="category-card" *ngFor="let c of categories">
+
+      <div class="card-header">
+        <mat-icon class="category-icon">category</mat-icon>
+        <h3>{{ c.title }}</h3>
+      </div>
+
+      <p class="description">
+        {{ c.description }}
+      </p>
+
+      <!-- FIXED ACTIONS WITH ROUTING -->
+      <mat-card-actions class="card-actions">
+
+        <!-- <button 
+          mat-stroked-button 
+          color="primary"
+          [routerLink]="['/admin/category', c.cid]">
+          View
+        </button> -->
+
+        <button 
+          mat-stroked-button 
+          color="accent"
+          [routerLink]="['/admin/update-category', c.cid]">
+          Edit
+        </button>
+
+      </mat-card-actions>
+
+    </mat-card>
+
+  </div>
+
+</div>

@@ -1,0 +1,30 @@
+<mat-card class="sidebar">
+
+  <!-- Sidebar Title -->
+  <div class="sidebar-header">
+    <span>Available Categories</span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="sidebar-nav">
+
+    <!-- All Quizzes -->
+    <a routerLink="/user-dashboard/0" routerLinkActive="active">
+      <mat-icon>view_list</mat-icon>
+      <span>All Quizzes</span>
+    </a>
+
+    <!-- Dynamic Categories -->
+    <a *ngFor="let c of categories"
+       [routerLink]="'/user-dashboard/' + c.cid"
+       routerLinkActive="active">
+      <mat-icon>category</mat-icon>
+      <span>{{ c.title }}</span>
+    </a>
+
+  </nav>
+
+  <!-- Divider -->
+  <div class="sidebar-divider"></div>
+
+</mat-card>

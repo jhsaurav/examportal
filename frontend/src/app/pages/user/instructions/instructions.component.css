@@ -1,0 +1,119 @@
+/* Wrapper */
+.instruction-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+/* Glass Card */
+.instruction-card {
+  width: 800px;
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  animation: fadeIn 0.4s ease;
+}
+
+/* Header */
+.instruction-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.instruction-header h2 {
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #1e293b;
+}
+
+.instruction-header p {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* Info Box */
+.info-box {
+  margin: 20px 0;
+  padding: 20px;
+  background: #f1f5f9;
+  border-radius: 14px;
+}
+
+.info-box h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.quiz-stats {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat mat-icon {
+  font-size: 30px;
+  color: #1d4ed8;
+}
+
+.stat strong {
+  display: block;
+  font-size: 22px;
+  color: #0f172a;
+}
+
+.stat span {
+  font-size: 13px;
+  color: #475569;
+}
+
+/* Section */
+.section {
+  margin-top: 25px;
+}
+
+.section h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.section ul li {
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: #334155;
+}
+
+/* Start Button */
+.start-btn-row {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.start-btn {
+  padding: 12px 35px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,65 @@
+.saaS-navbar {
+  height: 64px;
+  padding: 0 32px;
+  background: #f8f1f1;
+  border-bottom: 1px solid #a2adcf;
+}
+.saaS-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.brand span {
+  color: #06b6d4;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  font-size: 19px;
+  color: #475569;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #1e40af;
+}
+
+/* Register */
+.nav-link.accent {
+  color: #06b6d4;
+  font-weight: 500;
+}
+
+/* Logout subtle */
+.nav-link.muted {
+  color: #94a3b8;
+}
+
+.nav-link.muted:hover {
+  color: #64748b;
+}
+
+/* Profile badge */
+.profile {
+  padding: 6px 14px;
+  background: #f1f5ff;
+  border-radius: 18px;
+  color: #1e40af;
+  font-size: 14px;
+  font-weight: 500;
+}

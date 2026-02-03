@@ -1,0 +1,64 @@
+<mat-card class="profile-card premium">
+
+  <!-- Header -->
+  <div class="profile-header premium-header">
+    <div class="avatar-xl">
+      {{ user.firstName[0] | uppercase }}
+    </div>
+
+    <h2>{{ user.firstName }} {{ user.lastName }}</h2>
+    <span class="role-chip">{{ user.role | uppercase }}</span>
+  </div>
+
+  <!-- Info Section -->
+  <div class="profile-info-grid">
+
+    <div class="info-box">
+      <mat-icon>person</mat-icon>
+      <div>
+        <span class="label">Username</span>
+        <span class="value">{{ user.username }}</span>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <mat-icon>fingerprint</mat-icon>
+      <div>
+        <span class="label">User ID</span>
+        <span class="value">{{ user.id }}</span>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <mat-icon>call</mat-icon>
+      <div>
+        <span class="label">Phone</span>
+        <span class="value">{{ user.phone }}</span>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <mat-icon>verified_user</mat-icon>
+      <div>
+        <span class="label">Status</span>
+        <span
+          class="status-pill"
+          [class.active]="user.enabled">
+          {{ user.enabled ? 'Active' : 'Inactive' }}
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Actions -->
+  <mat-card-actions class="profile-actions premium-actions">
+    <button mat-stroked-button color="primary">
+      Edit Profile
+    </button>
+    <button mat-flat-button color="primary">
+      Save Changes
+    </button>
+  </mat-card-actions>
+
+</mat-card>

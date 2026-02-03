@@ -1,0 +1,85 @@
+.truncate{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+}
+.quiz-page {
+  padding: 16px;
+}
+
+/* Header */
+.page-header h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Quiz Card */
+.quiz-card {
+  padding: 20px;
+  border-radius: 14px;
+  background: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+
+.quiz-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.quiz-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.quiz-icon img {
+ width: 51px;
+  height: 51px;
+  background: linear-gradient(135deg, #e0e7ff, #eef2ff);
+  border-radius: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+/* Category badge */
+.category {
+  font-size: 12px;
+  color: #475569;
+}
+
+/* Description */
+.description {
+  font-size: 14px;
+  color: #64748b;
+  margin: 12px 0;
+  height: 40px;
+  overflow: hidden;
+}
+
+/* Stats */
+.quiz-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #334155;
+  margin-bottom: 16px;
+}
+
+/* Start Button */
+.start-btn {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}

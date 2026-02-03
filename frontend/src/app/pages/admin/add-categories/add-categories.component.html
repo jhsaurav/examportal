@@ -1,0 +1,59 @@
+<div class="form-page">
+
+  <mat-card class="form-card">
+
+    <!-- Header -->
+    <div class="form-header">
+      <h2>Add New Category</h2>
+      <p>Create a new category for quizzes</p>
+    </div>
+
+    <!-- Form -->
+    <form (ngSubmit)="formSubmit()" class="category-form">
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Category Title</mat-label>
+        <input
+          matInput
+          required
+          name="title"
+          placeholder="Enter category title"
+          [(ngModel)]="category.title" />
+        <mat-icon matPrefix>category</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Description</mat-label>
+        <textarea
+          matInput
+          required
+          rows="4"
+          name="description"
+          placeholder="Describe this category"
+          [(ngModel)]="category.description">
+        </textarea>
+        <mat-icon matPrefix>description</mat-icon>
+      </mat-form-field>
+
+      <!-- Actions -->
+      <div class="form-actions">
+        <button
+          mat-stroked-button
+          color="primary"
+          routerLink="/admin/categories">
+          Cancel
+        </button>
+
+        <button
+          mat-flat-button
+          color="primary"
+          type="submit">
+          Add Category
+        </button>
+      </div>
+
+    </form>
+
+  </mat-card>
+
+</div>

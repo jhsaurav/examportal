@@ -1,0 +1,65 @@
+<div class="questions-page">
+
+  <!-- Header -->
+  <div class="page-header">
+    <div>
+      <h2>Questions</h2>
+      <p>{{ qTitle }}</p>
+    </div>
+
+    <button
+      mat-raised-button
+      color="primary"
+      [routerLink]="['/admin/add-questions', qId, qTitle]">
+      + Add Question
+    </button>
+  </div>
+
+  <!-- Questions -->
+  <div class="question-list">
+
+    <mat-card
+      class="question-card"
+      *ngFor="let q of questions; let i = index">
+
+      <!-- Question -->
+      <div class="question-header">
+        <span class="question-number">Q{{ i + 1 }}</span>
+        <div class="question-text" [innerHTML]="q.content"></div>
+      </div>
+
+      <!-- Options -->
+      <div class="options-grid">
+        <div class="option">A. {{ q.option1 }}</div>
+        <div class="option">B. {{ q.option2 }}</div>
+        <div class="option">C. {{ q.option3 }}</div>
+        <div class="option">D. {{ q.option4 }}</div>
+      </div>
+
+      <!-- Answer -->
+      <div class="answer">
+        <strong>Correct Answer:</strong>
+        <span>{{ q.answer }}</span>
+      </div>
+
+      <!-- Actions -->
+      <div class="question-actions">
+        <button
+          mat-stroked-button
+          color="primary">
+          Edit
+        </button>
+
+        <button
+          mat-stroked-button
+          color="warn"
+          (click)="deleteQuestion(q.quesId)">
+          Delete
+        </button>
+      </div>
+
+    </mat-card>
+
+  </div>
+
+</div>

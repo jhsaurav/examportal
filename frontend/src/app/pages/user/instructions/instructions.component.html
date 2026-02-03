@@ -1,0 +1,79 @@
+<div class="instruction-wrapper">
+  <mat-card class="instruction-card">
+
+    <!-- Header -->
+    <div class="instruction-header">
+      <h2><mat-icon>menu_book</mat-icon> Instructions</h2>
+      <p>Read everything carefully before starting the quiz</p>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <!-- Quiz Details -->
+    <div class="info-box">
+      <h3>{{quiz.title}}</h3>
+      <p>{{quiz.description}}</p>
+
+      <div class="quiz-stats">
+        <div class="stat">
+          <mat-icon>help</mat-icon>
+          <strong>{{quiz.numberOfQuestions}}</strong>
+          <span>Questions</span>
+        </div>
+
+        <div class="stat">
+          <mat-icon>timer</mat-icon>
+          <strong>{{quiz.numberOfQuestions * 2}} min</strong>
+          <span>Total Time</span>
+        </div>
+
+        <div class="stat">
+          <mat-icon>score</mat-icon>
+          <strong>{{quiz.maxmarks}}</strong>
+          <span>Total Marks</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Important Instructions -->
+    <div class="section">
+      <h3><mat-icon>priority_high</mat-icon> Important Instructions</h3>
+
+      <ul>
+        <li>This quiz is only for practice purposes.</li>
+        <li>You must finish within 
+          <b>{{quiz.numberOfQuestions * 2}} minutes</b>.
+        </li>
+        <li>Try to answer with your own knowledge.</li>
+        <li>There are 
+          <b>{{quiz.numberOfQuestions}}</b> questions.
+        </li>
+        <li>Each question carries 
+          <b>{{quiz.maxmarks / quiz.numberOfQuestions}} marks</b>.
+        </li>
+        <li>No negative marking is applied.</li>
+      </ul>
+    </div>
+
+    <!-- Attempt Rules -->
+    <div class="section">
+      <h3><mat-icon>tips_and_updates</mat-icon> Attempting Quiz</h3>
+
+      <ul>
+        <li>Click <b>Start Quiz</b> to begin.</li>
+        <li>Timer starts immediately after you begin.</li>
+        <li>You cannot resume the quiz if interrupted.</li>
+        <li>Click <b>Next</b> to move to the next question.</li>
+        <li>Click <b>Submit</b> to finish the quiz.</li>
+      </ul>
+    </div>
+
+    <!-- Start Button -->
+    <div class="start-btn-row">
+      <button mat-raised-button color="primary" class="start-btn" (click)="startQuiz()">
+        Start Quiz
+      </button>
+    </div>
+
+  </mat-card>
+</div>

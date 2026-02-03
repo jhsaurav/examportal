@@ -1,0 +1,58 @@
+<div class="auth-wrapper">
+
+  <mat-card class="auth-card">
+
+    <!-- Logo -->
+    <div class="logo-box">
+      <img src="../../../assets/logo.png" alt="ExamPortal Logo" />
+      <h2>Welcome Back</h2>
+      <p>Please login to continue</p>
+    </div>
+
+    <!-- Login Form -->
+    <form (ngSubmit)="formSubmit()" class="auth-form">
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Username</mat-label>
+        <input
+          matInput
+          [(ngModel)]="loginData.username"
+          name="username"
+          required
+          placeholder="Enter username" />
+        <mat-icon matPrefix>person</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Password</mat-label>
+        <input
+          matInput
+          [(ngModel)]="loginData.password"
+          name="password"
+[type]="hide ? 'password' : 'text'"
+          required
+          placeholder="Enter password" />  
+           <mat-icon matPrefix>lock</mat-icon>
+           
+           <button mat-icon-button matSuffix type="button" (click)="hide = !hide" aria-label="Toggle password visibility">
+          <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+     
+      </mat-form-field>
+
+      <!-- Actions -->
+      <div class="action-row">
+        <button mat-flat-button color="primary" type="submit" class="submit-btn">
+          Login
+        </button>
+
+        <button mat-stroked-button color="primary" type="reset">
+          Reset
+        </button>
+      </div>
+
+    </form>
+
+  </mat-card>
+
+</div>

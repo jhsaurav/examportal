@@ -1,0 +1,52 @@
+<mat-card class="sidebar">
+
+  <!-- Sidebar Title -->
+  <div class="sidebar-header">
+    <span>Menu</span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="sidebar-nav">
+
+    <a routerLink="/admin" routerLinkActive="active">
+      <mat-icon>home</mat-icon>
+      <span>Dashboard</span>
+    </a>
+
+    <a routerLink="/admin/profile" routerLinkActive="active">
+      <mat-icon>account_circle</mat-icon>
+      <span>Profile</span>
+    </a>
+
+    <a routerLink="/admin/categories" routerLinkActive="active">
+      <mat-icon>category</mat-icon>
+      <span>Categories</span>
+    </a>
+
+    <a routerLink="/admin/add-category" routerLinkActive="active">
+      <mat-icon>add_circle_outline</mat-icon>
+      <span>Add Category</span>
+    </a>
+
+    <a routerLink="/admin/quiz" routerLinkActive="active">
+      <mat-icon>quiz</mat-icon>
+      <span>Quizzes</span>
+    </a>
+
+    <a routerLink="/admin/add-quiz" routerLinkActive="active">
+      <mat-icon>add</mat-icon>
+      <span>Add Quiz</span>
+    </a>
+
+  </nav>
+
+  <!-- Divider -->
+  <div class="sidebar-divider"></div>
+
+  <!-- Logout -->
+  <!-- <button class="logout-btn" (click)="logout()">
+    <mat-icon>logout</mat-icon>
+    Logout
+  </button> -->
+
+</mat-card>

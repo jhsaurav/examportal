@@ -1,0 +1,86 @@
+.sidebar {
+  width: 240px;
+  min-height: calc(100vh - 64px);
+  border-radius: 16px;
+  padding: 12px 0;
+  background: #f8f1f1;
+  overflow: hidden; /* 🔑 prevents highlight overflow */
+}
+
+/* Header */
+.sidebar-header {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+/* Nav */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 8px;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #334155;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.sidebar-nav a mat-icon {
+  font-size: 20px;
+  color: #64748b;
+}
+
+/* Hover */
+.sidebar-nav a:hover {
+  background: #f1f5f9;
+}
+
+/* Active */
+.sidebar-nav a.active {
+  background: #e0e7ff;
+  color: #1d4ed8;
+}
+
+.sidebar-nav a.active mat-icon {
+  color: #1d4ed8;
+}
+
+/* Divider */
+.sidebar-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 12px 16px;
+}
+
+/* Logout */
+.logout-btn {
+  width: calc(100% - 32px);
+  margin: 0 16px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: none;
+  background: #fff5f5;
+  color: #dc2626;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.logout-btn mat-icon {
+  color: #dc2626;
+}
+
+.logout-btn:hover {
+  background: #fee2e2;
+}

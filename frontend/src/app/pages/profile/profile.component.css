@@ -1,0 +1,112 @@
+.profile-card.premium {
+  max-width: 700px;
+  margin: 32px auto;
+  padding: 0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Header */
+.premium-header {
+  background: linear-gradient(135deg, #1e40af, #06b6d4);
+  color: #fff;
+  padding: 32px;
+  text-align: center;
+}
+.mat-card>.mat-card-actions:last-child {
+    margin-bottom: 10px;
+    padding-bottom: 0;}
+
+.avatar-xl {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #1e40af;
+  font-size: 36px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 6px rgba(255,255,255,0.25);
+}
+
+.role-chip {
+  display: inline-block;
+  margin-top: 6px;
+  padding:7px 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.25);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Info grid */
+.profile-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 24px;
+}
+
+.info-box {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.info-box mat-icon {
+  color: #1e40af;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Status */
+.status-pill {
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status-pill.active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+/* Actions */
+.premium-actions {
+  padding: 20px 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  background: #f8fafc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profile-info-grid {
+    grid-template-columns: 1fr;
+  }
+}

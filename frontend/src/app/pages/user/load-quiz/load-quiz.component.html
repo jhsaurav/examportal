@@ -1,0 +1,47 @@
+<div class="quiz-page">
+
+  <!-- Header -->
+  <div class="page-header">
+    <h1>Available Quizzes</h1>
+  </div>
+
+  <!-- Grid -->
+  <div class="quiz-grid">
+
+    <mat-card class="quiz-card" *ngFor="let q of quizzes">
+
+      <!-- Title + Category -->
+      <div class="quiz-header">
+        <!-- <mat-icon class="quiz-icon">quiz</mat-icon> -->
+         <img  width="50px" height="50px" src="\assets\b.jpg" alt="">
+        <div>
+          <h3>{{ q.title }}</h3>
+          <small class="category">{{ q.category.title }}</small>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <p class="description">
+        {{ q.description }}
+      </p>
+
+      <!-- Stats Row -->
+      <div class="quiz-stats">
+        <span>Q: {{ q.numberOfQuestions }}</span>
+        <span>Marks: {{ q.maxmarks }}</span>
+      </div>
+
+      <!-- Start Button -->
+      <button
+        mat-flat-button
+        color="primary"
+        class="start-btn"
+        [routerLink]="'/user-dashboard/instructions/' + q.id">
+        Start Quiz
+      </button>
+
+    </mat-card>
+
+  </div>
+
+</div>

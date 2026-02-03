@@ -1,0 +1,42 @@
+<mat-toolbar class="saaS-navbar">
+
+  <div class="nav-left">
+    <button mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="brand">Exam<span>Portal</span></span>
+  </div>
+
+  <span class="spacer"></span>
+
+  <div class="nav-actions">
+
+    <a *ngIf="!isLoggedIn"
+       routerLink="/login"
+       class="nav-link">
+       Login
+    </a>
+
+    <a *ngIf="!isLoggedIn"
+       routerLink="/signup"
+       class="nav-link accent">
+       Register
+    </a>
+
+    <!-- Profile first -->
+    <a *ngIf="isLoggedIn && user"
+       routerLink="/admin/profile"
+       class="profile">
+       {{ user.username }}
+    </a>
+
+    <!-- Logout subtle -->
+    <a *ngIf="isLoggedIn"
+       (click)="logout()"
+       class="nav-link muted">
+       Logout
+    </a>
+
+  </div>
+
+</mat-toolbar>

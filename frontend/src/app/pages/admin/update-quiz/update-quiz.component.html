@@ -1,0 +1,104 @@
+<div class="form-page">
+
+  <mat-card class="form-card" *ngIf="quiz && quiz.category">
+
+    <!-- Header -->
+    <div class="form-header">
+      <h2>Update Quiz</h2>
+      <p>Modify quiz details and settings</p>
+    </div>
+
+    <!-- Form -->
+    <form (ngSubmit)="updateData()" class="quiz-form">
+
+      <!-- Quiz Title -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Quiz Title *</mat-label>
+        <input
+          matInput
+          required
+          name="title"
+          [(ngModel)]="quiz.title" />
+      </mat-form-field>
+
+      <!-- Description -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Description *</mat-label>
+        <textarea
+          matInput
+          rows="4"
+          required
+          name="description"
+          [(ngModel)]="quiz.description">
+        </textarea>
+      </mat-form-field>
+
+      <!-- Grid -->
+      <div class="form-grid">
+
+        <mat-form-field appearance="outline">
+          <mat-label>Maximum Marks *</mat-label>
+          <input
+            matInput
+            type="number"
+            required
+            name="maxmarks"
+            [(ngModel)]="quiz.maxmarks" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Total Questions *</mat-label>
+          <input
+            matInput
+            type="number"
+            required
+            name="numberOfQuestions"
+            [(ngModel)]="quiz.numberOfQuestions" />
+        </mat-form-field>
+
+      </div>
+
+      <!-- Category -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Category *</mat-label>
+        <mat-select
+          name="category"
+          required
+          [(ngModel)]="quiz.category.cid">
+          <mat-option *ngFor="let c of categories" [value]="c.cid">
+            {{ c.title }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <!-- Publish -->
+      <div class="toggle-row">
+        <mat-slide-toggle
+          name="activate"
+          [(ngModel)]="quiz.activate">
+          Publish quiz
+        </mat-slide-toggle>
+      </div>
+
+      <!-- Actions -->
+      <div class="form-actions">
+        <button
+          mat-stroked-button
+          color="primary"
+          routerLink="/admin/quiz">
+          Cancel
+        </button>
+
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit">
+          Update Quiz
+        </button>
+      </div>
+
+    </form>
+
+  </mat-card>
+
+</div>
