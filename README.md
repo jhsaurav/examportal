@@ -73,11 +73,11 @@ This project is ideal for:
 
 ---
 Registration:
-<img width="1886" height="867" alt="image" src="https://github.com/user-attachments/assets/c15bf8ca-683f-4729-9312-6d671356721e" />
+<img width="1500" height="867" alt="image" src="https://github.com/user-attachments/assets/c15bf8ca-683f-4729-9312-6d671356721e" />
 Categories From Admin side:
-<img width="1887" height="887" alt="image" src="https://github.com/user-attachments/assets/94f62699-902a-48a6-b391-ff59e898e2e5" />
+<img width="1500" height="887" alt="image" src="https://github.com/user-attachments/assets/94f62699-902a-48a6-b391-ff59e898e2e5" />
 Quizzes User side:
-<img width="1888" height="881" alt="image" src="https://github.com/user-attachments/assets/01839713-69d6-4cf9-a53f-8c5547785f72" />
+<img width="1500" height="881" alt="image" src="https://github.com/user-attachments/assets/01839713-69d6-4cf9-a53f-8c5547785f72" />
 
 
 
