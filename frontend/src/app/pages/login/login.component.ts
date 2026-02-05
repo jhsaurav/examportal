@@ -45,8 +45,6 @@ export class LoginComponent implements OnInit {
           this.login.setUser(user);
           console.log(user);
 
-          //redirect:admin
-          //redirect normal
           const role = this.login.getUserRole();
           console.log("Role from backend:", role);
 

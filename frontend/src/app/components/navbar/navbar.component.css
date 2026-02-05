@@ -1,65 +1,51 @@
 .saaS-navbar {
-  height: 64px;
-  padding: 0 32px;
-  background: #f8f1f1;
-  border-bottom: 1px solid #a2adcf;
-}
-.saaS-navbar {
+  padding: 0 16px;
   display: flex;
+  background-color: #f8f1f1;
   align-items: center;
 }
 
-.spacer {
-  flex: 1 1 auto;
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .brand {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
-  color: #1e40af;
 }
 
 .brand span {
   color: #06b6d4;
 }
 
+.spacer {
+  flex: 1;
+}
+
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
 }
 
 .nav-link {
-  font-size: 19px;
-  color: #475569;
+  font-size: 15px;
   text-decoration: none;
+  color: #484646;
 }
 
-.nav-link:hover {
-  color: #1e40af;
-}
-
-/* Register */
 .nav-link.accent {
   color: #06b6d4;
-  font-weight: 500;
+  font-weight: 700;
 }
 
-/* Logout subtle */
 .nav-link.muted {
-  color: #94a3b8;
+  color: #a0c58a;
 }
 
-.nav-link.muted:hover {
-  color: #64748b;
-}
-
-/* Profile badge */
-.profile {
-  padding: 6px 14px;
-  background: #f1f5ff;
-  border-radius: 18px;
-  color: #1e40af;
-  font-size: 14px;
-  font-weight: 500;
+.avatar-btn mat-icon {
+  font-size: 32px;   /* Bigger profile icon */
+  color: #579add;
 }

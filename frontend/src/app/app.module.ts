@@ -39,6 +39,7 @@ import { InstructionsComponent } from './pages/user/instructions/instructions.co
 import { StartComponent } from './pages/user/start/start.component';
 import{MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MatMenuModule } from '@angular/material/menu';
+import { UpdateCategoryComponent } from './pages/admin/update-category/update-category.component';
 
 
 @NgModule({
@@ -65,6 +66,7 @@ import { MatMenuModule } from '@angular/material/menu';
     LoadQuizComponent,
     InstructionsComponent,
     StartComponent,
+    UpdateCategoryComponent,
   
   
   ],

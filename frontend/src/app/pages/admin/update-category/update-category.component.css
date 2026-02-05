@@ -1,0 +1,58 @@
+.form-page {
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 520px;
+  padding: 28px;
+  border-radius: 16px;
+}
+
+.form-header {
+  margin-bottom: 24px;
+}
+
+.form-header h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.form-header p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.category-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+@media (max-width: 480px) {
+  .form-card {
+    padding: 20px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+}

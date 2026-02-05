@@ -11,6 +11,7 @@
 
   <div class="nav-actions">
 
+    <!-- Login / Register (Only when not logged in) -->
     <a *ngIf="!isLoggedIn"
        routerLink="/login"
        class="nav-link">
@@ -23,19 +24,27 @@
        Register
     </a>
 
-    <!-- Profile first -->
-    <a *ngIf="isLoggedIn && user"
-       routerLink="/admin/profile"
-       class="profile">
-       {{ user.username }}
-    </a>
+    <!-- Profile Avatar + Dropdown when logged in -->
+    <button *ngIf="isLoggedIn"
+            mat-icon-button
+            [matMenuTriggerFor]="profileMenu"
+            class="avatar-btn"
+            matTooltip="Account">
+        <mat-icon>account_circle</mat-icon>
+    </button>
 
-    <!-- Logout subtle -->
-    <a *ngIf="isLoggedIn"
-       (click)="logout()"
-       class="nav-link muted">
-       Logout
-    </a>
+    <!-- Dropdown Menu -->
+    <mat-menu #profileMenu="matMenu">
+      <button mat-menu-item routerLink="/admin/profile" *ngIf="user">
+        <mat-icon>person</mat-icon>
+        <span>{{ user.username }}</span>
+      </button>
+
+      <button mat-menu-item (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        Logout
+      </button>
+    </mat-menu>
 
   </div>
 

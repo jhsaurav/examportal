@@ -28,18 +28,18 @@
       <!-- FIXED ACTIONS WITH ROUTING -->
       <mat-card-actions class="card-actions">
 
-        <!-- <button 
-          mat-stroked-button 
-          color="primary"
-          [routerLink]="['/admin/category', c.cid]">
-          View
-        </button> -->
-
-        <button 
+          <button 
           mat-stroked-button 
           color="accent"
           [routerLink]="['/admin/update-category', c.cid]">
           Edit
+        </button>
+
+        <button 
+          mat-stroked-button 
+          color="warn"
+          (click)="deleteCategory(c.cid)">
+          Delete
         </button>
 
       </mat-card-actions>

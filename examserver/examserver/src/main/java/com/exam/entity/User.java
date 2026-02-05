@@ -34,7 +34,7 @@ public class User implements UserDetails {
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "user")
 	@JsonManagedReference
-//@JsonIgnore
+    //@JsonIgnore
 	private Set<UserRole> userRoles = new HashSet<>();
 
 	public User() {
@@ -128,16 +128,15 @@ public class User implements UserDetails {
 	}
 
 	@Override
-    @JsonIgnore//this should not be there
+	@JsonIgnore // this should not be there
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		
+
 		Set<Authority> set = new HashSet<>();
 		this.userRoles.forEach(userRole -> {
 			set.add(new Authority(userRole.getRole().getRoleName()));
 		});
 		return set;
 	}
-
 
 	@Override
 	public boolean isAccountNonExpired() {
@@ -147,7 +146,7 @@ public class User implements UserDetails {
 
 	@Override
 	public boolean isAccountNonLocked() {
-		
+
 		return true;
 	}
 

@@ -1,0 +1,69 @@
+<div class="form-page">
+
+  <mat-card class="form-card">
+
+    <!-- Header -->
+    <div class="form-header">
+      <h2>Update Category</h2>
+      <p>Modify the existing category details</p>
+    </div>
+
+    <!-- Form -->
+    <form (ngSubmit)="updateCategory()" class="category-form">
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Category Title</mat-label>
+        <input
+          matInput
+          required
+          name="title"
+          placeholder="Enter category title"
+          [(ngModel)]="category.title" />
+        <mat-icon matPrefix>edit</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Description</mat-label>
+        <textarea
+          matInput
+          required
+          rows="4"
+          name="description"
+          placeholder="Update description"
+          [(ngModel)]="category.description">
+        </textarea>
+        <mat-icon matPrefix>description</mat-icon>
+      </mat-form-field>
+
+      <!-- Actions -->
+      <div class="form-actions">
+
+        <button
+          mat-stroked-button
+          color="primary"
+          routerLink="/admin/categories">
+          Cancel
+        </button>
+
+        <button
+          mat-flat-button
+          color="primary"
+          type="submit">
+          Save Changes
+        </button>
+
+        <button
+          mat-flat-button
+          color="warn"
+          type="button"
+          (click)="deleteCategory(category.cid)">
+          Delete Category
+        </button>
+
+      </div>
+
+    </form>
+
+  </mat-card>
+
+</div>
