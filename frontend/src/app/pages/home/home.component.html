@@ -1,10 +1,42 @@
-<div class="bootstrap-wrapper">
-    <div class="container">
-        <div class="row mt20">
-            <div class="col-md-6 offset-md-3 text-center">
-                <h1>Welcome to the Home page !</h1>
-                <button mat-raised-button color="primary">Home Page</button>
-            </div>
-        </div>
+<div class="home-wrapper">
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Practice Smarter. Score Higher.</h1>
+      <p>Access quizzes, sharpen your skills, and track your performance — all in one place.</p>
+
+      <button mat-flat-button color="primary" routerLink="/user-dashboard/0">
+        Start Learning
+      </button>
     </div>
+
+    <div class="hero-image">
+      <img src="\assets\Studying-rafiki.png" alt="Hero Illustration">
+    </div>
+  </section>
+
+
+  <section class="features-section">
+    <div class="feature-card">
+      <mat-icon>category</mat-icon>
+      <h3>Explore Categories</h3>
+      <p>Choose from multiple quiz subjects and start practicing instantly.</p>
+      <button mat-stroked-button color="primary" routerLink="/user-dashboard/0">View Categories</button>
+    </div>
+
+    <div class="feature-card">
+      <mat-icon>assignment</mat-icon>
+      <h3>Take Quizzes</h3>
+      <p>Test your knowledge with timed quizzes and instant results.</p>
+      <button mat-stroked-button color="primary" routerLink="/user-dashboard/0">Start Quiz</button>
+    </div>
+
+    <div class="feature-card">
+      <mat-icon>leaderboard</mat-icon>
+      <h3>Track Progress</h3>
+      <p>Review your performance and improve every day.</p>
+      <button mat-stroked-button color="primary" routerLink="/profile">View Profile</button>
+    </div>
+  </section>
+
 </div>

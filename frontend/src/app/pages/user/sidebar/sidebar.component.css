@@ -1,8 +1,10 @@
 /* Main Card */
 .sidebar {
-  width: 240px;
+  left: -20px;
+    top: 2px;
+  width: 230px;
   min-height: calc(100vh - 64px);
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 12px 0;
   background: #f8f1f1;
   overflow: hidden; /* prevents highlight overflow */

@@ -1,1 +1,63 @@
-<p>welcome page!</p>
+<div class="admin-dashboard">
+
+  <!-- Header -->
+  <div class="dashboard-header">
+    <h1>Welcome Back, Admin 👋</h1>
+    <p>Manage categories, quizzes and user activities from here.</p>
+  </div>
+
+  <!-- Quick Stats -->
+  <div class="stats-grid">
+
+    <div class="stat-card">
+      <mat-icon>category</mat-icon>
+      <h2>{{ totalCategories }}</h2>
+      <p>Categories</p>
+    </div>
+
+    <div class="stat-card">
+      <mat-icon>assignment</mat-icon>
+      <h2>{{ totalQuizzes }}</h2>
+      <p>Quizzes</p>
+    </div>
+
+    <div class="stat-card">
+      <mat-icon>help_outline</mat-icon>
+      <h2>{{ totalQuestions }}</h2>
+      <p>Questions</p>
+    </div>
+
+    <div class="stat-card">
+      <mat-icon>people</mat-icon>
+      <h2>{{ totalUsers }}</h2>
+      <p>Users</p>
+    </div>
+
+  </div>
+
+  <!-- Quick Actions -->
+  <div class="actions-grid">
+
+    <div class="action-card" routerLink="/admin/add-category">
+      <mat-icon>add_box</mat-icon>
+      <h3>Add New Category</h3>
+    </div>
+
+    <div class="action-card" routerLink="/admin/add-quiz">
+      <mat-icon>post_add</mat-icon>
+      <h3>Create New Quiz</h3>
+    </div>
+
+    <div class="action-card" routerLink="/admin/quiz">
+      <mat-icon>assignment</mat-icon>
+      <h3>Manage Quizzes</h3>
+    </div>
+
+    <div class="action-card" routerLink="/admin/categories">
+      <mat-icon>category</mat-icon>
+      <h3>View Categories</h3>
+    </div>
+
+  </div>
+
+</div>
