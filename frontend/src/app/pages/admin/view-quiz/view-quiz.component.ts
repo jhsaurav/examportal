@@ -8,7 +8,8 @@ import Swal from 'sweetalert2';
   styleUrls: ['./view-quiz.component.css']
 })
 export class ViewQuizComponent implements OnInit {
-  quizzes = [];
+  page:number=1;
+  quizzes:any[] = [];
   constructor(private _quiz: QuizService) { }
 
   ngOnInit(): void {

@@ -11,7 +11,7 @@
   <!-- Quiz Grid -->
   <div class="quiz-grid">
 
-    <mat-card class="quiz-card" *ngFor="let q of quizzes">
+    <mat-card class="quiz-card" *ngFor="let q of quizzes| paginate: { itemsPerPage: 6, currentPage: page }">
 
       <!-- Card Header -->
       <div class="quiz-card-header">
@@ -55,6 +55,14 @@
 
     </mat-card>
 
+  </div>
+  <!-- PAGINATION CONTROLS -->
+  <div class="pagination-container">
+    <pagination-controls
+      (pageChange)="page = $event"
+      previousLabel="Prev"
+      nextLabel="Next">
+    </pagination-controls>
   </div>
 
 </div>

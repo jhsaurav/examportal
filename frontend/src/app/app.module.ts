@@ -40,7 +40,7 @@ import { StartComponent } from './pages/user/start/start.component';
 import{MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MatMenuModule } from '@angular/material/menu';
 import { UpdateCategoryComponent } from './pages/admin/update-category/update-category.component';
-
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -88,6 +88,7 @@ import { UpdateCategoryComponent } from './pages/admin/update-category/update-ca
     MatSelectModule,
     MatProgressSpinnerModule,
     MatMenuModule,
+    NgxPaginationModule,
     
   ],
   providers: [authInterceptorProviders],

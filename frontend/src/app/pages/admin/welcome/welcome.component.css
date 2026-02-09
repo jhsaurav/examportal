@@ -2,20 +2,19 @@
   padding: 25px;
 }
 
-/* Header */
 .dashboard-header h1 {
+  color:#0da4bd;
   font-size: 32px;
-  margin: 0;
-  font-weight: 700;
+  margin: 3px;
+  font-weight: 600;
 }
 
 .dashboard-header p {
   font-size: 15px;
-  color: #6b7280;
+  color: #393a3b;
   margin-bottom: 25px;
 }
 
-/* Stats Grid */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -46,7 +45,6 @@
   font-size: 14px;
 }
 
-/* Quick Actions */
 .actions-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

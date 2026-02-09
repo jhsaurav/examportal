@@ -1,67 +1,82 @@
-/* Main Card */
+/* MAIN SIDEBAR CARD */
 .sidebar {
-  left: -20px;
-    top: 2px;
-  width: 230px;
-  min-height: calc(100vh - 64px);
-  border-radius: 12px;
-  padding: 12px 0;
+  left:-12px;
+  top: 2px;
+  width: 240px;
+  min-height: calc(100vh - 80px);
   background: #f8f1f1;
-  overflow: hidden; /* prevents highlight overflow */
+  border-radius: 14px;
+  padding: 12px 0;
+  overflow-y: auto;
+  transition: width 0.25s ease;
 }
 
-/* Header */
+/* Collapsed mode */
+.sidebar.collapsed {
+  width:115px;
+}
+
 .sidebar-header {
-  padding: 12px 20px;
-  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
   font-weight: 600;
-  color: #64748b;
+  color: #555;
 }
 
-/* Nav Container */
+/* SEARCH BOX */
+.search-box {
+  padding: 0 12px;
+}
+
+.search-field {
+  width: 100%;
+}
+
+/* NAV LINKS */
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  padding: 0 8px;
+  padding: 10px;
 }
 
-/* Nav Item */
 .sidebar-nav a {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 10px 16px;
-  border-radius: 10px;
+  gap: 12px;
+  padding: 10px 14px;
   text-decoration: none;
-  color: #334155;
-  font-size: 14px;
+  color: #333;
+  border-radius: 8px;
   transition: background 0.2s ease;
+  font-size: 14px;
+}
+
+.sidebar-nav a:hover {
+  background: #e2e8f0;
+}
+
+.sidebar-nav a.active {
+  background: #c7d2fe;
+  color: #1e3a8a;
 }
 
 .sidebar-nav a mat-icon {
-  font-size: 20px;
-  color: #64748b;
-}
-
-/* Hover */
-.sidebar-nav a:hover {
-  background: #f1f5f9;
-}
-
-/* Active Item */
-.sidebar-nav a.active {
-  background: #e0e7ff;
-  color: #1d4ed8;
-}
-
-.sidebar-nav a.active mat-icon {
-  color: #1d4ed8;
+  font-size: 22px;
 }
 
 /* Divider */
 .sidebar-divider {
-  height: 1px;
-  background: #e5e7eb;
-  margin: 12px 16px;
+  border-top: 1px solid #ddd;
+  margin: 12px;
+}
+
+/* Scrollbar styling */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
 }

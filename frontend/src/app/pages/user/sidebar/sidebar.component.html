@@ -1,30 +1,48 @@
-<mat-card class="sidebar">
+<mat-card class="sidebar" [class.collapsed]="isCollapsed">
 
-  <!-- Sidebar Title -->
+  <!-- Sidebar Header -->
   <div class="sidebar-header">
-    <span>Available Categories</span>
+    <span>Categories</span>
+
+    <!-- Collapse Button -->
+    <button mat-icon-button (click)="toggleSidebar()">
+      <mat-icon>{{ isCollapsed ? 'chevron_right' : 'chevron_left' }}</mat-icon>
+    </button>
   </div>
 
-  <!-- Navigation -->
+  <!-- Search Bar -->
+  <div class="search-box" *ngIf="!isCollapsed">
+    <mat-form-field appearance="outline" class="search-field">
+      <mat-icon matPrefix>search</mat-icon>
+      <input 
+        matInput 
+        placeholder="Search category..."
+        [(ngModel)]="searchText"
+      >
+    </mat-form-field>
+  </div>
+
+  <!-- Category List -->
   <nav class="sidebar-nav">
 
-    <!-- All Quizzes -->
+    <!-- ALL QUIZZES -->
     <a routerLink="/user-dashboard/0" routerLinkActive="active">
       <mat-icon>view_list</mat-icon>
-      <span>All Quizzes</span>
+      <span *ngIf="!isCollapsed">All Quizzes</span>
     </a>
 
     <!-- Dynamic Categories -->
-    <a *ngFor="let c of categories"
+    <a *ngFor="let c of filteredCategories()"
        [routerLink]="'/user-dashboard/' + c.cid"
        routerLinkActive="active">
-      <mat-icon>category</mat-icon>
-      <span>{{ c.title }}</span>
+       
+      <mat-icon>{{ getCategoryIcon(c.title) }}</mat-icon>
+      <span *ngIf="!isCollapsed">{{ c.title }}</span>
+
     </a>
 
   </nav>
 
-  <!-- Divider -->
   <div class="sidebar-divider"></div>
 
 </mat-card>

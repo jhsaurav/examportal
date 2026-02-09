@@ -7,14 +7,14 @@
       mat-flat-button
       color="primary"
       routerLink="/admin/add-category">
-      + Add Category
+      ++ Add Category
     </button>
   </div>
 
   <!-- Categories Grid -->
   <div class="category-grid">
 
-    <mat-card class="category-card" *ngFor="let c of categories">
+    <mat-card class="category-card" *ngFor="let c of categories | paginate: { itemsPerPage: 6, currentPage: page }">
 
       <div class="card-header">
         <mat-icon class="category-icon">category</mat-icon>
@@ -25,7 +25,6 @@
         {{ c.description }}
       </p>
 
-      <!-- FIXED ACTIONS WITH ROUTING -->
       <mat-card-actions class="card-actions">
 
           <button 
@@ -35,17 +34,17 @@
           Edit
         </button>
 
-        <button 
-          mat-stroked-button 
-          color="warn"
-          (click)="deleteCategory(c.cid)">
-          Delete
-        </button>
-
       </mat-card-actions>
 
     </mat-card>
 
   </div>
 
+  <!-- Pagination -->
+  <pagination-controls
+    (pageChange)="page = $event"
+    previousLabel="Prev"
+    nextLabel="Next">
+  </pagination-controls>
+  
 </div>

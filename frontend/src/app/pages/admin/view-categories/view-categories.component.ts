@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
 })
 export class ViewCategoriesComponent implements OnInit {
   categories = [];
-
+page: number = 1; 
   constructor(private _category: CategoryService) { }
 
   ngOnInit(): void {

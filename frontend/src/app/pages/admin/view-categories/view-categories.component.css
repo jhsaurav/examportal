@@ -15,14 +15,12 @@
   font-weight: 600;
 }
 
-/* Grid */
 .category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
 }
 
-/* Card */
 .category-card {
   padding: 20px;
   border-radius: 14px;
@@ -34,7 +32,6 @@
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Card header */
 .card-header {
   display: flex;
   align-items: center;
@@ -47,7 +44,6 @@
   font-size: 26px;
 }
 
-/* Text */
 .description {
   font-size: 14px;
   color: #64748b;
@@ -58,4 +54,6 @@
 .card-actions {
   display: flex;
   gap: 10px;
+  justify-content: flex-end;
+  
 }
