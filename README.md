@@ -72,17 +72,20 @@ This project is ideal for:
 - Real-world Exam/Quiz application  
 
 ---
-Login:
-<img width="1000" height="867" alt="image" src="https://github.com/user-attachments/assets/c15bf8ca-683f-4729-9312-6d671356721e" />
-Categories From Admin side:
-<img width="1000" height="887" alt="image" src="https://github.com/user-attachments/assets/94f62699-902a-48a6-b391-ff59e898e2e5" />
-Available Quizzes:
-<img width="500" height="300" alt="Screenshot 2026-02-10 230852" src="https://github.com/user-attachments/assets/cf18ebeb-5082-4516-9923-c2ab9dc6b350" />
 
-Quizzes User side:
-<img width="1000" height="881" alt="image" src="https://github.com/user-attachments/assets/01839713-69d6-4cf9-a53f-8c5547785f72" />
-Home Page:
-<img width="1000" height="899" alt="Screenshot 2026-02-10 225439" src="https://github.com/user-attachments/assets/5d9604e6-7ee8-4806-8d9b-1f88f679f984" />
+Login :
+<img width="1000" height="800" alt="image" src="https://github.com/user-attachments/assets/c15bf8ca-683f-4729-9312-6d671356721e" />
+Dashboard :
+<img width="1000" height="800" alt="Screenshot 2026-02-10 231741" src="https://github.com/user-attachments/assets/a973823f-3b9c-4e5d-80ec-063891326bc2" />
+Home Page :
+<img width="1000" height="800" alt="Screenshot 2026-02-10 225439" src="https://github.com/user-attachments/assets/5d9604e6-7ee8-4806-8d9b-1f88f679f984" />
+Categories[Admin Side] :
+<img width="1000" height="800" alt="Screenshot 2026-02-10 231548" src="https://github.com/user-attachments/assets/c8a72978-3dad-41ae-8a0a-ea1fc7edc7e4" />
+Available Quizzes :
+<img width="1000" height="800" alt="Screenshot 2026-02-10 230852" src="https://github.com/user-attachments/assets/cf18ebeb-5082-4516-9923-c2ab9dc6b350" />
+Practice Set [User side] :
+<img width="1000" height="800" alt="image" src="https://github.com/user-attachments/assets/01839713-69d6-4cf9-a53f-8c5547785f72" />
+
 
 
 
