@@ -1,6 +1,6 @@
 # 📘 Exam Portal – Java Full Stack Project (Spring Boot + Angular)
 
-A complete **Java Full Stack Exam Portal** built using **Spring Boot** (Backend) and **Angular** (Frontend).  
+A complete **Java Full Stack Exam Portal** built using Spring Boot (Backend) and Angular (Frontend).  
 This project provides a functional online examination system with user authentication, admin management, quizzes, categories, and question handling.
 
 ---
@@ -72,12 +72,18 @@ This project is ideal for:
 - Real-world Exam/Quiz application  
 
 ---
-Registration:
-<img width="1500" height="867" alt="image" src="https://github.com/user-attachments/assets/c15bf8ca-683f-4729-9312-6d671356721e" />
+Login:
+<img width="1000" height="867" alt="image" src="https://github.com/user-attachments/assets/c15bf8ca-683f-4729-9312-6d671356721e" />
 Categories From Admin side:
-<img width="1500" height="887" alt="image" src="https://github.com/user-attachments/assets/94f62699-902a-48a6-b391-ff59e898e2e5" />
+<img width="1000" height="887" alt="image" src="https://github.com/user-attachments/assets/94f62699-902a-48a6-b391-ff59e898e2e5" />
+Available Quizzes:
+<img width="1000" height="888" alt="Screenshot 2026-02-10 225847" src="https://github.com/user-attachments/assets/ad6f9ef0-6509-4439-9120-72bbc8c7783c" />
 Quizzes User side:
-<img width="1500" height="881" alt="image" src="https://github.com/user-attachments/assets/01839713-69d6-4cf9-a53f-8c5547785f72" />
+<img width="1000" height="881" alt="image" src="https://github.com/user-attachments/assets/01839713-69d6-4cf9-a53f-8c5547785f72" />
+Home Page:
+<img width="1000" height="899" alt="Screenshot 2026-02-10 225439" src="https://github.com/user-attachments/assets/5d9604e6-7ee8-4806-8d9b-1f88f679f984" />
+
+
 
 
 
