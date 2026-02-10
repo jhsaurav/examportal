@@ -75,16 +75,22 @@ This project is ideal for:
 
 Login :
 <img width="1000" height="800" alt="image" src="https://github.com/user-attachments/assets/c15bf8ca-683f-4729-9312-6d671356721e" />
+
 Dashboard :
 <img width="1000" height="800" alt="Screenshot 2026-02-10 231741" src="https://github.com/user-attachments/assets/a973823f-3b9c-4e5d-80ec-063891326bc2" />
+
 Home Page :
 <img width="1000" height="800" alt="Screenshot 2026-02-10 225439" src="https://github.com/user-attachments/assets/5d9604e6-7ee8-4806-8d9b-1f88f679f984" />
+
 Categories[Admin Side] :
 <img width="1000" height="800" alt="Screenshot 2026-02-10 231548" src="https://github.com/user-attachments/assets/c8a72978-3dad-41ae-8a0a-ea1fc7edc7e4" />
+
 Available Quizzes :
 <img width="1000" height="800" alt="Screenshot 2026-02-09 234111" src="https://github.com/user-attachments/assets/5e02a3ad-503b-44c5-b6dc-20f1edffd805" />
+
 Practice Set [User side] :
-<img width="1000" height="800" alt="image" src="https://github.com/user-attachments/assets/01839713-69d6-4cf9-a53f-8c5547785f72" />
+<img width="1000" height="800" alt="Screenshot 2026-02-10 230852" src="https://github.com/user-attachments/assets/eae0d7be-566a-461a-abee-e4298e4b66cc" />
+
 
 
 
