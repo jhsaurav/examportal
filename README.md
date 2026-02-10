@@ -82,7 +82,7 @@ Home Page :
 Categories[Admin Side] :
 <img width="1000" height="800" alt="Screenshot 2026-02-10 231548" src="https://github.com/user-attachments/assets/c8a72978-3dad-41ae-8a0a-ea1fc7edc7e4" />
 Available Quizzes :
-<img width="1000" height="800" alt="Screenshot 2026-02-10 230852" src="https://github.com/user-attachments/assets/cf18ebeb-5082-4516-9923-c2ab9dc6b350" />
+<img width="1000" height="800" alt="Screenshot 2026-02-09 234111" src="https://github.com/user-attachments/assets/5e02a3ad-503b-44c5-b6dc-20f1edffd805" />
 Practice Set [User side] :
 <img width="1000" height="800" alt="image" src="https://github.com/user-attachments/assets/01839713-69d6-4cf9-a53f-8c5547785f72" />
 
