@@ -77,7 +77,8 @@ Login:
 Categories From Admin side:
 <img width="1000" height="887" alt="image" src="https://github.com/user-attachments/assets/94f62699-902a-48a6-b391-ff59e898e2e5" />
 Available Quizzes:
-<img width="1000" height="888" alt="Screenshot 2026-02-10 225847" src="https://github.com/user-attachments/assets/ad6f9ef0-6509-4439-9120-72bbc8c7783c" />
+<img width="500" height="300" alt="Screenshot 2026-02-10 230852" src="https://github.com/user-attachments/assets/cf18ebeb-5082-4516-9923-c2ab9dc6b350" />
+
 Quizzes User side:
 <img width="1000" height="881" alt="image" src="https://github.com/user-attachments/assets/01839713-69d6-4cf9-a53f-8c5547785f72" />
 Home Page:
