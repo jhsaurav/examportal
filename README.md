@@ -8,7 +8,7 @@ This project provides a functional online examination system with user authentic
 ## 🚀 Tech Stack
 
 ### 🔹 Frontend (Angular)
-- Angular 8+
+- Angular 9+
 - TypeScript
 - Bootstrap / Material UI
 - Angular Routing & Lazy Loading
@@ -23,8 +23,6 @@ This project provides a functional online examination system with user authentic
 - REST API Architecture
 
 ---
-
-## ✨ Features
 
 ### 👨‍🎓 **User Features**
 - Login & Register with JWT Authentication
@@ -49,7 +47,7 @@ examportal/
 └── examserver/ # Spring Boot Backend App
 
 
-## ▶️ How to Run the Project
+##  How to Run the Project
 
 ### 🖥 Backend (Spring Boot)
 1. Open the `examserver` folder in STS / IntelliJ / Eclipse  
